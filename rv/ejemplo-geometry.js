@@ -12,12 +12,12 @@ forma.faces.push(new THREE.Face3(0, 1, 4));
 forma.faces.push(new THREE.Face3(1, 2, 4));
 forma.faces.push(new THREE.Face3(2, 3, 4));
 
-forma.computeBoundingSphere();   <--esfera más pequeña que acota el objeto-->
+forma.computeBoundingSphere();  
 forma.computeFaceNormals();
 
 
 
-var material = new THREE.MeshNormalMaterials();
+var material = new THREE.MeshNormalMaterial();
 var malla  = new THREE.Mesh(forma, material);
 malla.rotateX(Math.PI/4);
 
