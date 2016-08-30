@@ -1,11 +1,12 @@
-var torre = new THREE.CylinderBufferGeometry(5, 5, 20, 32);
+var torreForma = new THREE.CylinderBufferGeometry(5, 5, 20, 32);
 var material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
-var cylinder = new THREE.Mesh( torre, material );
+var cylinder = new THREE.Mesh( torreForma, material );
 
 torre.translate(0,1,0);
-var torres = new THREE.Mesh(torre);
+var torreMalla = new THREE.Mesh(torreForma);
 var edificio = new THREE.Geometry();
-edificio.merge(torres.geometry, torres.matrix);
+
+edifcio.merge(torres.geometry, torres.matrix);
 
 var material = new THREE.MeshNormalMaterial();
 var edificio = new THREE.Mesh(edificio, material);
