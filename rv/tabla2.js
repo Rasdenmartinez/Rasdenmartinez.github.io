@@ -2,7 +2,7 @@
 
 				var size = 500, step = 50;
 
-				var geometry = new THREE.Geometry();
+				var geometry = new THREE.BoxGeometry();
 
 				for ( var i = - size; i <= size; i += step ) {
 
@@ -14,7 +14,15 @@
 
 				}
 
-				var material = new THREE.LineBasicMaterial( { color: 0x000000, opacity: 0.2, transparent: true } );
+				var material = new THREE.LineBasicMaterial( { color: 0x888888, opacity: 0.2, transparent: false } );
 
 				var line = new THREE.LineSegments( geometry, material );
-				scene.add( line );
+				escena.add( line );
+				
+var camara = new THREE.PerspectiveCamera();
+camara.position.z = 5;
+
+renderizador = new THREE.WebGLRenderer();
+renderizador.setSize(window.innerHeight*.95, window.innerHeight*.95);
+document.body.appendChild(renderizador.domElement);
+renderizador.render(escena, camara)
