@@ -14,7 +14,7 @@
 
 				}
 
-				var material = new THREE.LineBasicMaterial( { color: 0x888888, opacity: 0.2, transparent: true } );
+				var material = new THREE.LineBasicMaterial( { color: 0xFFFFFF, opacity: 0.2, transparent: true } );
 
 				var line = new THREE.LineSegments( geometry, material );
 				
