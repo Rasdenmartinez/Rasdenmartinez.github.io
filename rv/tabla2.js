@@ -18,13 +18,13 @@
 
 				var line = new THREE.LineSegments( geometry, material );
 				
-				line.rotateX(Math.PI/4);
+				line.rotatey(Math.PI/4);
 				
 				var escena = new THREE.Scene();
 				escena.add( line );
 				
 var camara = new THREE.PerspectiveCamera();
-camara.position.z = 5;
+camara.position.y = 5;
 
 renderizador = new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95, window.innerHeight*.95);
