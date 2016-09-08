@@ -18,7 +18,7 @@
 
 				var line = new THREE.LineSegments( geometry, material );
 				
-				line.rotatey(Math.PI/4);
+				line.rotateY(Math.PI/4);
 				
 				var escena = new THREE.Scene();
 				escena.add( line );
