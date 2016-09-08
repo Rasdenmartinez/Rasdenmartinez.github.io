@@ -17,7 +17,7 @@
 				var material = new THREE.LineBasicMaterial( { color: 0x888888, opacity: 0.2, transparent: false } );
 
 				var line = new THREE.LineSegments( geometry, material );
-				malla.rotateY(Math.PI/4);
+			
 				
 				var escena = new THREE.Scene();
 				escena.add( line );
