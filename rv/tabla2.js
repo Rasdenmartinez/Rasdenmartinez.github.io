@@ -17,6 +17,7 @@
 				var material = new THREE.LineBasicMaterial( { color: 0x888888, opacity: 0.2, transparent: false } );
 
 				var line = new THREE.LineSegments( geometry, material );
+				var escena = new THREE.Scene();
 				escena.add( line );
 				
 var camara = new THREE.PerspectiveCamera();
