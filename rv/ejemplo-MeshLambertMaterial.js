@@ -9,11 +9,12 @@ var malla = new THREE.Mesh(forma, material);
 
 var escena = new THREE.Scene();
 escena.add(malla);
+escena.add(LuzPuntual);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z=5;
 
-var lienzo = document. getElementById("LambertMaterial");
+var lienzo = document. getElementById("LuzPuntual");
 var renderizador= new THREE. WebGLRenderer({canvas:lienzo, antialias:true});
 
 renderizador.setsize(600,600);
