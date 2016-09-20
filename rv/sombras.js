@@ -17,9 +17,9 @@ var camara = new THREE.PerspectiveCamera();
 camara.position.z=15;
 camara.position.y=5;
 
-var lienzo = document.getElementById("LuzSombras");
+//var lienzo = document.getElementById("LuzSombras");
 //var renderizador= new THREE.WebGLRenderer({canvas:lienzo, antialias:true});
-
+ 
 //renderizador.setSize(600,600);
 //renderizador.render(escena,camara);
 
