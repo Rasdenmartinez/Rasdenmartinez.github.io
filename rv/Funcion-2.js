@@ -1,6 +1,6 @@
 function init(p)
 {
- malla=new THREE.Mesh(new THREE.BoxGeometry(p,p,p), new THREE.MeshNormalMaterial());
+malla=new THREE.Mesh(new THREE.BoxGeometry(p,p,p), new THREE.MeshNormalMaterial());
 escena= new THREE.Scene();
 escena.add(malla);
 camara = new THREE.PerspectiveCamera();
