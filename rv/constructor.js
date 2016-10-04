@@ -1,6 +1,6 @@
 function Arbol (){
 
-  var troncoForma = new THREE.CylinderGeometry (-25, .5, 1);
+  var troncoForma = new THREE.CylinderGeometry (-.25, .5, 1);
   var esferaForma = new THREE.SphereGeometry   (.65);
   esferaForma.translate                        (0,1,0);
   
@@ -31,14 +31,14 @@ function Arbol (){
        CONSTRUCTOR.renderizador = new THREE.WebGLRenderer ({canvas: lienzo, antialias: true});
        
        CONSTRUCTOR.renderizador.setSize (600, 600);
-         
+        
        CONSTRUCTOR.escena = new THREE.Scene();
-         CONSTRUCTOR.escena.add(arbol1.malla);
-         CONSTRUCTOR.escena.add(arbol2.malla);
-         
-       }
+       CONSTRUCTOR.escena.add(arbol1.malla);
+       CONSTRUCTOR.escena.add(arbol2.malla);
+     
+     }
        
-             CONSTRUCTOR.loop = function(){
+          CONSTRUCTOR.loop = function(){
             requestAnimationFrame( CONSTRUCTOR.loop );
             CONSTRUCTOR.renderizador.render( CONSTRUCTOR.escena, CONSTRUCTOR.camara );
             
@@ -47,6 +47,5 @@ function Arbol (){
           CONSTRUCTOR.setup ();
           CONSTRUCTOR.loop();
 
-       }
              
                  
