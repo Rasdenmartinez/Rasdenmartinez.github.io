@@ -24,8 +24,8 @@ PROTOTIPO.setup = function() {
        var arbol2 = new THREE.Mesh (new PROTOTIPO.ArbolGeometry(),
                                     new THREE.MeshNormalMaterial());
   
-       arbol1.malla.position.x = -5;
-       arbol2.malla.position.x =  5;
+       arbol1.position.x = -5;
+       arbol2.position.x =  5;
   
        PROTOTIPO.camara = new THREE.PerspectiveCamera();
        PROTOTIPO.camara.position.z = 20;
