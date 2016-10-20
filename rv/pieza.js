@@ -29,7 +29,7 @@ pieza=new Pieza();
 }
 function loop()
 {
-pieza.rotateY(0.1);
+//pieza.rotateY(0.1);
 if (pieza.piernaIzq==pieza.piernaIzq.rotateZ(0.1))
 {
        pieza.piernaIzq.rotateZ(-0.1);
