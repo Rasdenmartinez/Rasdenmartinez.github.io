@@ -25,7 +25,7 @@ pieza=new Pieza();
        pieza.renderizador.setSize (600, 600);
         
        pieza.escena = new THREE.Scene();
-       escena.add(pieza);
+       pieza.escena.add(pieza);
 }
 function loop()
 {
