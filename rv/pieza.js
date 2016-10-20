@@ -16,7 +16,7 @@ Pieza.prototype=new THREE.Object3D;
 function setup()
 {
 pieza=new Pieza();
-       pieza = new THREE.PerspectiveCamera();
+       pieza.camara = new THREE.PerspectiveCamera();
        pieza.camara.position.z = 20;
        
        var lienzo = document.getElementById("pieza");
