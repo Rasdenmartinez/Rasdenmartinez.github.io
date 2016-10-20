@@ -27,7 +27,7 @@ pieza=new Pieza();
        pieza.escena = new THREE.Scene();
        escena.add(pieza);
 }
-functionloop()
+function loop()
 {
 pieza.rotateY(0.1);
 pieza.piernaIzq.rotateZ(0.1);
