@@ -12,14 +12,28 @@ cuerpo.position.z=2.5;
 }
 var pieza
 Pieza.prototype=new THREE.Object3D;
+
 function setup()
 {
 pieza=new Pieza();
+       pieza = new THREE.PerspectiveCamera();
+       pieza.camara.position.z = 20;
+       
+       var lienzo = document.getElementById("pieza");
+       pieza.renderizador = new THREE.WebGLRenderer ({canvas: lienzo, antialias: true});
+       
+       pieza.renderizador.setSize (600, 600);
+        
+       pieza.escena = new THREE.Scene();
+       escena.add(pieza);
 }
 functionloop()
 {
 pieza.rotateY=0.1;
+requestAnimationFrame( pieza.loop );
+pieza.renderizador.render( pieza.escena, pieza.camara );
 }
-
+          pieza.setup ();
+          pieza.loop();
 
 
