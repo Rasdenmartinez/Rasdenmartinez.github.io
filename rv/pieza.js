@@ -30,8 +30,13 @@ pieza=new Pieza();
 function loop()
 {
 pieza.rotateY(0.1);
-pieza.piernaIzq.rotateZ(0.1);
+if (pieza.piernaIzq==pieza.piernaIzq.rotateZ(0.1))
 pieza.piernaIzq.rotateZ(-0.1);
+else
+piernaIzq.rotateZ(0.1);
+end
+       
+              
 requestAnimationFrame(loop);
 pieza.renderizador.render( pieza.escena, pieza.camara );
 }
