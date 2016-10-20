@@ -31,7 +31,7 @@ function loop()
 {
 pieza.rotateY(0.1);
 pieza.piernaIzq.rotateZ(0.1);
-requestAnimationFrame( pieza.loop );
+requestAnimationFrame(loop);
 pieza.renderizador.render( pieza.escena, pieza.camara );
 }
         setup();
