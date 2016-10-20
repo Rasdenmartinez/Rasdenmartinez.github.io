@@ -29,7 +29,8 @@ pieza=new Pieza();
 }
 functionloop()
 {
-pieza.rotateY=0.1;
+pieza.rotateY(0.1);
+pieza.piernaIzq.rotateZ(0.1);
 requestAnimationFrame( pieza.loop );
 pieza.renderizador.render( pieza.escena, pieza.camara );
 }
