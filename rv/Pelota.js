@@ -68,7 +68,7 @@ this.step=-this.step;
 this.position.x +=this.step;
 };
 
-fuction Pared(size, x=0, y=0)
+function Pared(size, x=0, y=0)
 {
 THREE.Object3D().call(this,x,y);
 this.add(new THREE.Mesh(new THREE,BoxGeometry(size,size,size),new THREE.MeshNormalMaterial()));
