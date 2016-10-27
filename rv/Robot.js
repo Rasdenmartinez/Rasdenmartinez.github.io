@@ -74,7 +74,7 @@ Robot.prototype.sense=function(environment)
 
          Robot.prototype.plan=function(environment)
       {
-            this actuator.comands = []:
+            this.actuator.comands = []:
             if (this.sensor.colision == true)
                   this.actuador.commands.push('rotateCCW');
             else 
@@ -91,7 +91,7 @@ Robot.prototype.sense=function(environment)
                   console.log('Unknown command');
       };
       Robot prototype.operations={};
-      Robot.prototyupe.operations.goStraight=function(Robot,distance)
+      Robot.prototype.operations.goStraight=function(Robot,distance)
       {
             if (distance === undefined)
                   distance = 0.05;
