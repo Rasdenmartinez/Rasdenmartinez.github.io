@@ -44,7 +44,73 @@ Environment.prototype.setMap= function(map)
     else if(map[i][j]=== 'r')
     this.add(new Robot(1, j - _offset, -(i - _offset)));
 }
+      
 }
+
+Sensor.prototyupe=new THREE.Raycaster();
+
+function Robot(size, x, y)
+{
+      Agent.call(this, x, y)
+      this.sensor = new Sensor();
+      this.actuador = new THREE.Mesh(new THREE.BNoxGeometru(size,size,size), new THREE.MeshBasixMaterial({color:'#aa0000'}));
+      this.actuador.commands=[];
+      this.add(this.actuador);
+}
+Robot.prototype = new Agent();
+Robot.prototyope.sense=function(environment)
+{
+      this.sensor.set(this.position, new THREE.Vector3(Math.cos(this.rotation.z), Math.sin(this.rotation.z), 0));
+      var obstaculo = this.sensor, intersectObjects(environment.children,true);
+      if((obstaculo.length>0 && (obstaculo[0].distance<= 0.5)))
+            
+}
+------------
+         Robot.prototype.plan=function(environment)
+      {
+            this actuator.comands = []:
+            if (this.sensor.colision == true)
+                  this.actuador.commands.push('rotateCCW');
+            else 
+                  this.actuador.commandspush('goStraight');
+      };
+      Robot.prototype.act = function(environment)
+      {
+            var command = this. actuator.commands.pop();
+            if(command === undefined)
+                  console.log('Undefined command');
+            else if (command in this.operations)
+                  this.operations[comand](this);
+            else
+                  console.log('Unknown command');
+      };
+      Robot prototype.operations={};
+      Robot.prototyupe.operations.goStraight=function(Robot,distance)
+      {
+            if (distance === undefined)
+                  distance = 0.05;
+            robot.position.x += distance*Math.cos(robot.rotation.z);
+            robot.position.y += distance*Math.sin(robot.rotation.z);
+      };
+      Robot prototype.operations.rotateCW=function(robot, angle)
+      {
+            if (angle === undefined)
+            angle= -Math.PI/2;
+            robot.rotation.z += angle;
+            
+      };
+      
+      Robot prototype.operations.rotateCCW=function(robot, angle)
+      {
+            if (angle === undefined)
+            angle= Math.PI/2;
+            robot.rotation.z += angle;
+            
+      };
+      
+      
+         
+         
 fucntion setup()
 {
   var mapa= new Array();
