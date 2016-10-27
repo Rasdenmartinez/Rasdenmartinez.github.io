@@ -67,7 +67,7 @@ Robot.prototype.sense=function(environment)
       var obstaculo = this.sensor.intersectObjects(environment.children,true);
       if(obstaculo.length>0 && (obstaculo[0].distance<= 0.5))
             
-};
+}
 
          Robot.prototype.plan=function(environment)
       {
