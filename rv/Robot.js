@@ -47,7 +47,7 @@ Environment.prototype.setMap= function(map)
       
 }
 
-Sensor.prototyupe=new THREE.Raycaster();
+Sensor.prototype=new THREE.Raycaster();
 
 function Robot(size, x, y)
 {
