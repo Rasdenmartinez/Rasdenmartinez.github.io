@@ -117,7 +117,7 @@ Robot.prototype.sense=function(environment)
       
          
          
-fucntion setup()
+function setup()
 {
   var mapa= new Array();
   mapa[0]="xxxxxxxxxxxxxxxxxxxxxxxxx";
