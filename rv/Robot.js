@@ -90,7 +90,7 @@ Robot.prototype.sense=function(environment)
             else
                   console.log('Unknown command');
       };
-      Robot prototype.operations={};
+      Robot.prototype.operations={};
       Robot.prototype.operations.goStraight=function(Robot,distance)
       {
             if (distance === undefined)
