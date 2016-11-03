@@ -14,6 +14,7 @@ function environment()
       THREE.Scene.call(this);
 }
 environment.prototype = new THREE.Scene();
+
 environment.prototype.sense = function()
 {
       for (var i=0; i<this.children.length; i++)
@@ -50,7 +51,7 @@ this.position.y=y;
 
 Wall.prototype= new THREE.Mesh();
 
-Environment.prototype.setMap= function(map)
+environment.prototype.setMap= function(map)
 {
   var_offst= Math.floor(map.lenght/2);
   
