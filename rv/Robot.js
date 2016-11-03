@@ -4,7 +4,24 @@ function Agent(x=0, y=0)
       this.position.x =x;
       this.position.y =y;     
 }
-environment.prototype= new THREE.Object3D();
+Agent.prototype = new THREE.Object3D();
+Agent.prototype.sense= function(environment) {};
+Agent.prototype.plan= function(environment) {};
+Agent.prototype.act= function(environment) {};
+
+function environment()
+{
+      THREE.Scene.call(this);
+}
+environment.prototype = new THREE.Scene();
+environment.prototype.sense = function()
+{
+      for (var i=0; i<this.children.length; i++)
+      {
+            if(this.children[i].sense != undefined)
+                this.children[i].sense(this);
+      }
+}
 
 environment.prototype.plan = function()
 {
