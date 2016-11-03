@@ -106,7 +106,7 @@ Robot.prototype.sense=function(environment)
             
       };
       
-      Robot prototype.operations.rotateCCW=function(robot, angle)
+      Robot.prototype.operations.rotateCCW=function(robot, angle)
       {
             if (angle === undefined)
             angle= Math.PI/2;
