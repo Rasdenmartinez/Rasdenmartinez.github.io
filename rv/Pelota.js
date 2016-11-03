@@ -103,7 +103,7 @@ requestAnimationFrame(loop);
 entorno.sense();
 entorno.plan();
 entorno.act();
-renderer.render(entorno.camara);
+renderer.render(entorno,camara);
 }
 setup();
 loop();
