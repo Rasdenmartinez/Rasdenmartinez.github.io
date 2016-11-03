@@ -5,7 +5,7 @@ function Agent(x=0, y=0)
       this.position.y =y;     
 }
 
-Environment.prototype.plan = function()
+environment.prototype.plan = function()
 {
       for (var i=0; i<this.children.length; i++)
       {
@@ -13,7 +13,7 @@ Environment.prototype.plan = function()
                 this.children[i].plan(this);
       }
 }
-Environment.prototype.act = function()
+environment.prototype.act = function()
 {
       for (var i=0; i<this.children.length; i++)
       {
