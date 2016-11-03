@@ -98,7 +98,7 @@ Robot.prototype.sense=function(environment)
             robot.position.x += distance*Math.cos(robot.rotation.z);
             robot.position.y += distance*Math.sin(robot.rotation.z);
       };
-      Robot prototype.operations.rotateCW=function(robot, angle)
+      Robot.prototype.operations.rotateCW=function(robot, angle)
       {
             if (angle === undefined)
             angle= -Math.PI/2;
