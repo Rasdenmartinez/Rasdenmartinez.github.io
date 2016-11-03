@@ -156,7 +156,7 @@ function setup()
   document.body.appendChild(renderer.domElement);
   environm,ent.add(camera);
 }
-funciton loop()
+function loop()
 {
   requestAnimationFrame(loop);
   environment.sense();
