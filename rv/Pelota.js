@@ -83,13 +83,13 @@ entorno = new Environment();
 camara=new THREE.PerspectiveCamera();
 camara.position.z=30;
 
-entorno.add(new Pared(1,7,0));
-entorno.add(new Pared(1,-7,0));
-entorno.add(new Pared(1,7,1));
-entorno.add(new Pared(1,-7,1));
-entorno.add(new Pared(1,7,-1));
-entorno.add(new Pared(1,7,-1));
-entorno.add(new Pared(0.5));
+entorno.add(new Pelota(1,7,0));
+entorno.add(new Pelota(1,-7,0));
+entorno.add(new Pelota(1,7,1));
+entorno.add(new Pelota(1,-7,1));
+entorno.add(new Pelota(1,7,-1));
+entorno.add(new Pelota(1,7,-1));
+entorno.add(new Pelota(0.5));
 entorno.add(camara);
 
 renderer = new THREE.WebGLRenderer();
