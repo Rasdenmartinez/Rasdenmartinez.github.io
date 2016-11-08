@@ -25,7 +25,7 @@ Environment.prototype.plan = function()
 {
       for (var i=0; i<this.children.length; i++)
       {
-            if(this.children[i].plan != undefined)
+            if(this.children[i].plan !== undefined)
                 this.children[i].plan(this);
       }
 }
