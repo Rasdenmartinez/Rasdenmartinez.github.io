@@ -17,7 +17,7 @@ Environment.prototype.sense = function()
 {
       for (var i=0; i<this.children.length; i++)
       {
-            if(this.children[i].sense != undefined)
+            if(this.children[i].sense !== undefined)
                 this.children[i].sense(this);
       }
 }
@@ -33,7 +33,7 @@ Environment.prototype.act = function()
 {
       for (var i=0; i<this.children.length; i++)
       {
-            if(this.children[i].act != undefined)
+            if(this.children[i].act !== undefined)
                 this.children[i].act(this);
       }
 }
