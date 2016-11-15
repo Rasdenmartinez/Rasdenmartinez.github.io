@@ -185,8 +185,8 @@ window.onload=function(){document.onkeydown=desplazar};
     function desplazar(objeto){
     var tecla = objeto.which;
     
-        var situacionY = document.getElementById("torreMalla").style.position.x = 5;
-         var situacionX = document.getElementById("torreMalla").style.position.y = 5;
+        var situacionY = torreMalla.style.position.x = "absolute";
+         var situacionX =torreMalla.style.position.y = "absolute";
         switch (tecla){
             case 37 :   
                 torreMalla.style.left = situacionY-100+"px" ; break;
