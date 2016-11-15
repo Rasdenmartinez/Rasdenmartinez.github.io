@@ -185,17 +185,17 @@ window.onload=function(){document.onkeydown=desplazar};
     function desplazar(objeto){
     var tecla = objeto.which;
     
-        var situacionY = document.getElementById("torreMalla").style.position = "absolute";
-         var situacionX = document.getElementById("torreMalla").style.position = "absolute";
+        var situacionY = document.getElementById("torreMalla").style.position.x = 5;
+         var situacionX = document.getElementById("torreMalla").style.position.y = 5;
         switch (tecla){
             case 37 :   
-                torreMalla.style.left = situacionY-220+"px" ; break;
+                torreMalla.style.left = situacionY-100+"px" ; break;
             case 38 : 
-                torreMalla.style.top = situacionX-220+"px" ;break;
+                torreMalla.style.top = situacionX-100+"px" ;break;
             case 39 :  
-        torreMalla.style.left = situacionY-180+"px" ;break;
+        torreMalla.style.left = situacionY-100+"px" ;break;
             case 40 : 
-                torreMalla.style.top = situacionX-180+"px" ;break;
+                torreMalla.style.top = situacionX-100+"px" ;break;
         default :alert("Se ha equivocado, debe pulsar las flechas del teclado");
         }
     }
