@@ -586,3 +586,25 @@
   var rook = new THREE.Geometry();
   rook.merge(mtorrefinal10.geometry,mtorrefinal10.matrix);
   rook.merge(mpiedra6.geometry,mpiedra6.matrix);
+
+
+//Geometría de la torre
+var troncoForma = new THREE.CylinderGeometry(3, 3, 8);
+var baseForma = new THREE.CylinderGeometry(4, 4, 1);
+var subaseForma = new THREE.CylinderGeometry(5, 5, 1);
+var superiorForma = new THREE.CylinderGeometry(0, 5, 3.5);
+superiorForma.translate(0,10.5,0);
+subaseForma.translate(0,0.5,0);
+baseForma.translate(0,1.5,0);
+troncoForma.translate(0,4.5,0);
+var troncoMalla = new THREE.Mesh(troncoForma);
+var baseMalla = new THREE.Mesh(baseForma);
+var subaseMalla = new THREE.Mesh(subaseForma);
+var superiorMalla = new THREE.Mesh(superiorForma);
+var torreForma = new THREE.Geometry();
+torreForma.merge(troncoMalla.geometry, troncoMalla.matrix);
+torreForma.merge(baseMalla.geometry, baseMalla.matrix);
+torreForma.merge(subaseMalla.geometry, subaseMalla.matrix);
+torreForma.merge(superiorMalla.geometry, superiorMalla.matrix);
+
+
