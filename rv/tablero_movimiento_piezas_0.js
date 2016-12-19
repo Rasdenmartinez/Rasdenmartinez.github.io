@@ -305,7 +305,8 @@ Cursor.prototype.act = function(environment){
 		   if (cursor.position.z>=-70){
 	             cursor.translateZ(-10);
 		   }
-		}	
+		}
+			break;
           case 38 :  //Arriba
 			
 			if (bandera===1){
