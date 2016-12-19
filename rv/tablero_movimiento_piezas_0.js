@@ -1,31 +1,3 @@
-
-Skip to content
-This repository
-
-    Pull requests
-    Issues
-    Gist
-
-    @Rasdenmartinez
-
-1
-0
-
-    0
-
-Rasdenmartinez/Rasdenmartinez.github.io
-Code
-Issues 0
-Pull requests 0
-Projects 0
-Wiki
-Pulse
-Graphs
-Settings
-Rasdenmartinez.github.io/rv/tablero_movimiento_piezas_0.js
-2aed00d an hour ago
-@Rasdenmartinez Rasdenmartinez Update
-4010 lines (3855 sloc) 268 KB
 //Agente
 function Agent(x=0,y=0,z=0){
   THREE.Object3D.call(this);
