@@ -46,7 +46,7 @@ Environment.prototype.act = function(){
 }
 
 
-var,escena,renderizador;
+var camara,escena,renderizador;
 var malla,malla2,malla3,grupo,grupo2,grupo3,grupomorado;
 var ayuda,cursor,posicioninicial,seleccion;
 var bandera=0,banderacaballo=0;
