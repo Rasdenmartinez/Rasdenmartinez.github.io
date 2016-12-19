@@ -261,6 +261,17 @@ function BloqueRojo(x=0,y=0,z=0){
 BloqueRojo.prototype = new Agent();
 
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////  CONSTRUCTOR BLOQUEVERDE /////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function Seleccion(x=0,y=0,z=0){
+  Agent.call(this,x,y,z);
+  var luzverde = new THREE.MeshLambertMaterial({color: 0xffff00});
+  this.add(new THREE.Mesh(new THREE.BoxGeometry(10.2,10.2,10.2),luzverde));
+  this.position.y=y;
+  this.position.z=z;
+  this.position.x=x;
+}
 
 Seleccion.prototype = new Agent();
 
@@ -284,51 +295,7 @@ Cursor.prototype.act = function(environment){
       var tecla = pieza.which;
         switch (tecla){
           case 37 : //Izquierda
-		if (bandera===1){
-		  if (seleccion.position.x>=20){
-		    seleccion.translateX(-10);
-		  }
-		}
-		else{
-	  	   escena.remove(grupomorado);
-	           escena.remove(posicioninicial);
-	           escena.remove(seleccion);
-		   if (cursor.position.x>=20){
-		     cursor.translateX(-10);
-		   }
-		}
-                break;
-          case 38 :  //Arriba
-		if (bandera===1){
-		  if (seleccion.position.z>=-70){
-		    seleccion.translateZ(-10);
-		  }
-		}
-		else{
-	  	   escena.remove(grupomorado);
-	           escena.remove(posicioninicial);
-	           escena.remove(seleccion);
-		   if (cursor.position.z>=-70){
-	             cursor.translateZ(-10);
-		   }
-		}
-                break;
-          case 39 :  //Derecha 
-		if (bandera===1){
-		  if (seleccion.position.x<=70){
-		    seleccion.translateX(10);
-		  }
-		}
-		else{
-	  	   escena.remove(grupomorado);
-	           escena.remove(posicioninicial);
-	           escena.remove(seleccion);
-		   if (cursor.position.x<=70){
-		     cursor.translateX(10);
-		   }
-		}
-                break;
-          case 40 :  //Abajo
+			
 		if (bandera===1){
 		  if (seleccion.position.z<=-20){
 		    seleccion.translateZ(10);
@@ -343,6 +310,55 @@ Cursor.prototype.act = function(environment){
 		   }
 		}
                 break;
+			
+          case 38 :  //Arriba
+			
+			if (bandera===1){
+		  if (seleccion.position.x<=70){
+		    seleccion.translateX(10);
+		  }
+		}
+		else{
+	  	   escena.remove(grupomorado);
+	           escena.remove(posicioninicial);
+	           escena.remove(seleccion);
+		   if (cursor.position.x<=70){
+		     cursor.translateX(10);
+		   }
+		}
+                break;
+          case 39 :  //Derecha 
+		
+		if (bandera===1){
+		  if (seleccion.position.z>=-70){
+		    seleccion.translateZ(-10);
+		  }
+		}
+		else{
+	  	   escena.remove(grupomorado);
+	           escena.remove(posicioninicial);
+	           escena.remove(seleccion);
+		   if (cursor.position.z>=-70){
+	             cursor.translateZ(-10);
+		   }
+		}
+          case 40 :  //Abajo
+			
+		if (bandera===1){
+		  if (seleccion.position.x>=20){
+		    seleccion.translateX(-10);
+		  }
+		}
+		else{
+	  	   escena.remove(grupomorado);
+	           escena.remove(posicioninicial);
+	           escena.remove(seleccion);
+		   if (cursor.position.x>=20){
+		     cursor.translateX(-10);
+		   }
+		}
+                break;
+
 	  case 13 :  //Enter
 	        if (bandera===1){
 			
