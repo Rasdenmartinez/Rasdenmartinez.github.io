@@ -4001,9 +4001,8 @@ function setup() {
   
   //Luces
   escena.add(luzPuntual1, luzPuntual2, luzPuntual3);
-  escena.rotateX(Math.PI/2);
-escena.rotateZ(Math.PI/4);
-escena.rotateY(Math.PI/4);
+ // escena.rotateX(Math.PI/2);
+escena.rotateZ(Math.PI/2);
 }
 
 function loop() {
