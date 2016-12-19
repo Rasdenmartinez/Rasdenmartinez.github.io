@@ -206,7 +206,7 @@ function AlfilBlanco(x=0,y=0,z=0){
 //TorreNegra
 function TorreNegra(x=0,y=0,z=0){
 	Agent.call(this,x,y,z);
-	this.actuator = new THREE.Mesh(rook, Gris);
+	this.actuator = new THREE.Mesh(torreForma, Gris);
 	this.actuator.commands = [];
 	this.add(this.actuator);
 	this.position.y=y;
@@ -219,7 +219,7 @@ function TorreNegra(x=0,y=0,z=0){
 //TorreBlanca
 function TorreBlanca(x=0,y=0,z=0){
 	Agent.call(this,x,y,z);
-	this.actuator = new THREE.Mesh(rook, Blanco);
+	this.actuator = new THREE.Mesh(torreForma, Blanco);
 	this.actuator.commands = [];
 	this.add(this.actuator);
 	this.position.y=y;
