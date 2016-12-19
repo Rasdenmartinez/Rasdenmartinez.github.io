@@ -62,8 +62,8 @@ var reyblanco,reynegro;
 var Gris = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('negro metalico.jpg') });
 var Blanco = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('blanco metalico.jpg') });
 var Marco = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('madera.jpg') });
-var GrisLiso = new THREE.MeshLambertMaterial({color: 0xD3D3D3});
-var BlancoLiso = new THREE.MeshLambertMaterial({color: 0xFFFFFF});
+var GrisLiso = new THREE.MeshLambertMaterial({color: 0x9F9492});
+var BlancoLiso = new THREE.MeshLambertMaterial({color: 0xF5F5F5});
 
 //Sensor
 function Sensor(position,direction){ 
