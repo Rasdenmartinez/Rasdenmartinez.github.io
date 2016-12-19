@@ -35,7 +35,7 @@ Environment.prototype.plan = function(){
     if(this.children[i].plan !== undefined)
       this.children[i].plan(this);
   }
-}
+} 
 
 //Preguntar a todos los agentes si actuan
 Environment.prototype.act = function(){
