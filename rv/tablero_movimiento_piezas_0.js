@@ -59,9 +59,9 @@ var reinablanca,reinanegra;
 var reyblanco,reynegro;
 
 //Texturas
-var Gris = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('black_marmol.jpg') });
-var Blanco = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('white_marmol.jpg') });
-var Marco = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('wood.jpg') });
+var Gris = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('negro metalico.jpg') });
+var Blanco = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('blanco metalico.jpg') });
+var Marco = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('madera.jpg') });
 var GrisLiso = new THREE.MeshLambertMaterial({color: 0xD3D3D3});
 var BlancoLiso = new THREE.MeshLambertMaterial({color: 0xFFFFFF});
 
