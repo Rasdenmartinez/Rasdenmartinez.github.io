@@ -295,22 +295,20 @@ Cursor.prototype.act = function(environment){
       var tecla = pieza.which;
         switch (tecla){
           case 37 : //Izquierda
-			
+		
 		if (bandera===1){
-		  if (seleccion.position.z<=-20){
-		    seleccion.translateZ(10);
+		  if (seleccion.position.z>=-70){
+		    seleccion.translateZ(-10);
 		  }
 		}
 		else{
 	  	   escena.remove(grupomorado);
 	           escena.remove(posicioninicial);
 	           escena.remove(seleccion);
-		   if (cursor.position.z<=-20){
-		     cursor.translateZ(10);
+		   if (cursor.position.z>=-70){
+	             cursor.translateZ(-10);
 		   }
-		}
-                break;
-			
+		}	
           case 38 :  //Arriba
 			
 			if (bandera===1){
@@ -328,20 +326,22 @@ Cursor.prototype.act = function(environment){
 		}
                 break;
           case 39 :  //Derecha 
-		
+			
 		if (bandera===1){
-		  if (seleccion.position.z>=-70){
-		    seleccion.translateZ(-10);
+		  if (seleccion.position.z<=-20){
+		    seleccion.translateZ(10);
 		  }
 		}
 		else{
 	  	   escena.remove(grupomorado);
 	           escena.remove(posicioninicial);
 	           escena.remove(seleccion);
-		   if (cursor.position.z>=-70){
-	             cursor.translateZ(-10);
+		   if (cursor.position.z<=-20){
+		     cursor.translateZ(10);
 		   }
 		}
+                break;
+		
           case 40 :  //Abajo
 			
 		if (bandera===1){
