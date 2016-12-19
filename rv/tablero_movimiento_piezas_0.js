@@ -46,7 +46,7 @@ Environment.prototype.act = function(){
 }
 
 
-var camara,escena,renderizador;
+var,escena,renderizador;
 var malla,malla2,malla3,grupo,grupo2,grupo3,grupomorado;
 var ayuda,cursor,posicioninicial,seleccion;
 var bandera=0,banderacaballo=0;
@@ -3853,8 +3853,8 @@ function setup() {
 	
   //////////////////////////////////////////////////Camara///////////////////////////////////////////////////////////////////////
   camara = new THREE.PerspectiveCamera();
-  camara.position.z=50;
-  camara.position.x=20;
+  camara.position.z=100;
+  camara.position.x=50;
   //camara.lookAt(45, 20, -45);
   
   ///////////////////////////////////////////Renderizador//////////////////////////////////////////////////////////////////////////
@@ -4001,7 +4001,7 @@ function setup() {
   
   //Luces
   escena.add(luzPuntual1, luzPuntual2, luzPuntual3);
-  escena.rotateX(Math.PI/4);
+  escena.rotateX(Math.PI/2);
 }
 
 function loop() {
