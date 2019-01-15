@@ -9,7 +9,6 @@
   <body>
 
   <h1 id ="holaMundo"> </h1>
-  <button id ="Boton"> </h1>
 <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
 <script>
   // Initialize Firebase
@@ -25,10 +24,6 @@
     var holaMundo = document.getElementById('holaMundo');
     var dbRef = firebase.database().ref().child('text');
     dbRef.on('value', snap => holaMundo.innerText = snap.val() );
- ////////////////////Enlace con boton
-    var Boton = document.getElementById('Boton');
-    var dbRefboton = firebase.database().ref().child('boton');
-    dbRefboton.on('value', snap => Boton.innerText = snap.val() );
   </script>
   </body>
 
