@@ -12,7 +12,7 @@
   firebase.initializeApp(config);
   
   //obtener elementos
-  const preObject = document.getElemntById('objeto');
+  const preObject = document.getElementById('objeto');
   //crear referencias
   const dbRefObject = firebase.database().ref().child('objeto');
   
