@@ -4,6 +4,8 @@
 <meta charset = "utf-8">
 <title>Ejemplo de HTML</title>
 </head>
+  
+  <h1 id="holaMundo"></h1>
 <body>
 <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
 <script>
@@ -17,6 +19,9 @@
     messagingSenderId: "139828741250"
   };
   firebase.initializeApp(config);
+  var holamundo = document.getElementById('holaMundo');
+  var dbRef = firebase.database().ref().child('text');
+  dbref.on('value', snap => holaMundo.innerText = snap.val());
 </script>
 </body>
 </html>
