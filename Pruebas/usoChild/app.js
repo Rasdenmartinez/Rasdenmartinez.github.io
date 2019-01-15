@@ -28,6 +28,6 @@
     const li = document.createElement('li');
     li.innerText = snap.val();
     ulist.appendChild(li);
-  }
+ });
   
-());
+} ());
