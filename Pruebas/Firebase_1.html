@@ -21,7 +21,6 @@
     messagingSenderId: "139828741250"
   };
   firebase.initializeApp(config);
-</script>
     var holaMundo = document.getElementById('holaMundo');
     var dbRef = firebase.database().ref().child('text');
     dbRef.on('value', snap => holaMundo.innerText = snap.val() );
