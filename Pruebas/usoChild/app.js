@@ -24,10 +24,19 @@
   });
   
   //sincronizar cambios lista
-  dbRefList.on('child_added', snap=>{
+  dbRefList.on('child_added', snap=> {
     const li = document.createElement('li');
     li.innerText = snap.val();
     ulist.appendChild(li);
  });
   
+  dbRefList.on('child_changed', snap => {
+  const lichanged = document.getElementById('snap.key');
+  lichanged.innerText = snap.val();
+  });
+  dbrefList.on('child_removed', snap => {
+  const liToRmove = document.getElementById('snap.key');
+    liToRemove.remove();
+  });
+              
 } ());
