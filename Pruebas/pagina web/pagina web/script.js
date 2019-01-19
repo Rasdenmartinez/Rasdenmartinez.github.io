@@ -6,7 +6,7 @@
 $(document).ready(function() {
 
   //creamos un objeto de firebase, y le pasamos la URL como parametro
-  var ref = new Firebase("https://console.firebase.google.com/u/0/project/casa-bc661/database/firestore/luces/");
+  var ref = new Firebase("https://iot2016-b397b.firebaseio.com/");
 
   /*****************************************************************
    Obtenemos el valor del último estado 
