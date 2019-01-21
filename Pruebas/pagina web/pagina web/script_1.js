@@ -10,13 +10,13 @@ $(document).ready(function() {
 	});
   $("#switch").click(function(){
 	  var estado = $(this).is(':checked');
-	  b.update({
+	  ref.update({
 	    boton:estado
 	  });
 	});
   $("#switch2").click(function(){
 	  var estado = $(this).is(':checked');
-	  b2.update({
+	  ref.update({
 	    boton2:estado
 	  });
 	});
