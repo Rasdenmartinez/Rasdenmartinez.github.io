@@ -13,7 +13,7 @@ $(document).ready(function() {
   ******************************************************************/
   ref.once("value", function(res) {
 
-    var luzSala = res.child("sala").val();
+    var luzSala = res.child("boton").val();
     $('#switch').attr('checked', luzSala); // 
     console.log("Estado actual: " +luzSala)
 
