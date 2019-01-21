@@ -38,11 +38,11 @@ $(document).ready(function() {
      if(this.checked) 
       {
           console.log("On")
-          ref.update({ sala: true });
+          ref.update({ boton: true });
       }
       else{
           console.log("Off")
-          ref.update({ sala: false });
+          ref.update({ boton: false });
       }
     });
 
