@@ -3,12 +3,11 @@ $(document).ready(function() {
   //creamos un objeto de firebase, y le pasamos la URL como parametro
   var ref = new Firebase("https://iot2016-b397b.firebaseio.com/");
   //////obtenemos el ultimo estado
-  var b = ref('boton');
-  var b2 = ref('boton2');
   /////Estado de bd a botones
-	   $("#switch").attr('checked', data.val().b);
-	   $("#switch2").attr('checked', data.val().b2);
-    
+	ref.on('value', function(data){
+	   $("#switch").attr('checked', data.val().boton);
+	   $("#switch2").attr('checked', data.val().boton2);
+	});
   $("#switch").click(function(){
 	  var estado = $(this).is(':checked');
 	  b.update({
